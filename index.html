@@ -1,187 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Tomáš Belada - personal site : LinkedIn | Twitter | Facebook | GitHub | Email"
-    />
-    <meta name="author" content="Tomas Belada (tomasbelada.com)" />
-    <meta name="keywords" content="belada, tomas, software engineer" />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="snippet,archive" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <meta name="theme-color" content="#e9eaec" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Tomáš Belada - personal site" />
+		<meta name="author" content="Tomas Belada (tomasbelada.com)" />
+		<meta name="keywords" content="belada, tomas, software engineer" />
+		<meta name="robots" content="index,follow" />
+		<meta name="googlebot" content="snippet,archive" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<meta name="theme-color" content="#e9eaec" />
 
-    <title>Tomas Belada | Software Engineer | Not an athlete</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+		<title>Tomas Belada | Software Engineer | Not an athlete</title>
+		<style>
+			body {
+				font-family: georgia;
+				font-size: 16px;
+				color: #333652;
+				background-color: #e9eaec;
+				border-left: 16px solid #333652;
+				line-height: 1.618;
+				height: 100%;
+				margin: 0;
+			}
 
-      :before,
-      :after {
-        box-sizing: border-box;
-      }
+			.content {
+				margin-right: auto;
+				margin-left: auto;
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-top: 20vh;
+			}
 
-      body {
-        font-family: georgia;
-        font-size: 16px;
-        color: #333652;
-        background-color: #e9eaec;
-        border-left: 16px solid #333652;
-        line-height: 1.618;
-        height: 100%;
-        margin: 0;
-      }
+			.col {
+				position: relative;
+				min-height: 1px;
+				padding-left: 15px;
+				padding-right: 15px;
+				width: 61.8%;
+			}
 
-      div {
-        display: block;
-      }
+			@media (max-width: 760px) {
+				.col {
+					width: 100%;
+				}
+				.content {
+					margin-top: 0;
+				}
+			}
 
-      .content {
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-top: 20vh;
-      }
+			h1,
+			h2,
+			h3 {
+				margin-top: 22px;
+				margin-bottom: 11px;
+				font-family: inherit;
+				font-weight: 500;
+				line-height: 1.1;
+				color: inherit;
+			}
 
-      .col {
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 61.8%;
-      }
+			h1 {
+				font-size: 59px;
+			}
 
-      @media (max-width: 760px) {
-        .col {
-          width: 100%;
-        }
-        .content {
-          margin-top: 0;
-        }
-      }
+			h2 {
+				font-size: 37px;
+			}
 
-      h1,
-      h2,
-      h3 {
-        margin-top: 22px;
-        margin-bottom: 11px;
-        font-family: inherit;
-        font-weight: 500;
-        line-height: 1.1;
-        color: inherit;
-      }
+			h3 {
+				font-size: 23px;
+			}
 
-      h1 {
-        font-size: 59px;
-      }
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
 
-      h2 {
-        font-size: 37px;
-      }
+			li:not(:first-child)::before {
+				content: "|";
+			}
 
-      h3 {
-        font-size: 23px;
-      }
+			li {
+				display: inline-block;
+			}
 
-      ul {
-        padding-left: 0;
-        padding-top: 10px;
-        list-style: none;
-        margin-left: -5px;
-        margin-top: 0;
-        margin-bottom: 11px;
-      }
+			a {
+				color: #333652;
+			}
 
-      li:first-child:before {
-        content: "";
-      }
+			a:hover {
+				color: #90adc6;
+			}
+		</style>
+	</head>
 
-      li::before {
-        content: " | ";
-      }
-
-      li {
-        display: inline-block;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
-      a {
-        color: #333652;
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-
-      a:hover {
-        color: #90adc6;
-      }
-
-      a:visited {
-        color: #333652;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="content">
-      <div class="col">
-        <h2>Hi! My name is</h2>
-        <h1>Tomáš Belada</h1>
-        <h2>
-          <a
-            href="https://au.linkedin.com/in/tomasbelada"
-            title="LinkedIn profile"
-            >I am a software engineer</a
-          >
-        </h2>
-        <ul>
-          <li>
-            <a
-              href="https://au.linkedin.com/in/tomasbelada"
-              title="LinkedIn profile"
-            >
-              CV / Linkedin
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com/tomasbelada"
-              title="Twitter profile"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/tomasbelada"
-              title="Facebook profile"
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.goodreads.com/user/show/67691498-tom-belada"
-              title="Pocket"
-            >
-              What I read
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/belaczek" title="Github"> Github </a>
-          </li>
-          <li>
-            <a href="mailto:jades.hailing-0o@icloud.com" title="Email">
-              email
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>
+	<body>
+		<div class="content">
+			<div class="col">
+				<h2>Hi! My name is</h2>
+				<h1>Tomáš Belada</h1>
+				<h2>
+					<a
+						href="https://au.linkedin.com/in/tomasbelada"
+						title="LinkedIn profile"
+						>I am a software engineer</a
+					>
+				</h2>
+				<ul>
+					<li>
+						<a
+							href="https://au.linkedin.com/in/tomasbelada"
+							title="LinkedIn profile"
+							>Linkedin</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/belaczek" title="Github">Github</a>
+					</li>
+					<li>
+						<a
+							href="https://www.twitter.com/tomasbelada"
+							title="Twitter profile"
+							>Twitter</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.facebook.com/tomasbelada"
+							title="Facebook profile"
+							>Facebook</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.goodreads.com/user/show/67691498-tom-belada"
+							title="Goodreads"
+							>Goodreads</a
+						>
+					</li>
+					<li>
+						<a href="mailto:jades.hailing-0o@icloud.com" title="Email">email</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
