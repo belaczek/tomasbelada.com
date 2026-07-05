@@ -6,7 +6,6 @@
 			name="description"
 			content="Tomáš Belada — software engineer / lead"
 		/>
-		<meta name="author" content="Tomáš Belada (tomasbelada.com)" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<meta name="theme-color" content="#f5f4f1" />
@@ -17,7 +16,7 @@
 				margin: 0;
 				background: #f5f4f1;
 				color: #1e2133;
-				font-family: Baskerville, Georgia, serif;
+				font-family: "Gill Sans", "Helvetica Neue", sans-serif;
 				line-height: 1.4;
 			}
 
@@ -33,6 +32,7 @@
 
 			h1 {
 				margin: 0;
+				font-family: Baskerville, Georgia, serif;
 				font-size: clamp(52px, 10vw, 96px);
 				font-weight: 700;
 				letter-spacing: -1.5px;
@@ -59,7 +59,6 @@
 			}
 
 			.role {
-				font-family: "Gill Sans", "Helvetica Neue", sans-serif;
 				font-size: 13px;
 				letter-spacing: 5px;
 				text-transform: uppercase;
@@ -79,7 +78,6 @@
 
 			li {
 				display: inline-block;
-				font-family: "Gill Sans", "Helvetica Neue", sans-serif;
 				font-size: 15px;
 				letter-spacing: 0.5px;
 			}
@@ -93,11 +91,9 @@
 			a {
 				color: #1e2133;
 				text-decoration: none;
-				border-bottom: 1px solid rgba(213, 40, 30, 0.55);
+				border-bottom: 1px solid #d5281e8c;
 				padding-bottom: 1px;
-				transition:
-					color 0.15s,
-					border-color 0.15s;
+				transition: 0.15s;
 			}
 
 			a:hover {
@@ -108,6 +104,12 @@
 			a:focus-visible {
 				outline: 2px solid #d5281e;
 				outline-offset: 3px;
+			}
+
+			footer {
+				font-size: 11px;
+				color: #8a8d9c;
+				margin-top: 48px;
 			}
 
 			@media (max-width: 600px) {
@@ -162,6 +164,7 @@
 					</li>
 				</ul>
 			</nav>
+			<footer>This page fits into a single TCP packet.</footer>
 		</main>
 	</body>
 </html>
