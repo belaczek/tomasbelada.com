@@ -13,6 +13,39 @@
 				color: #f4ece0;
 				font: 15px/1.4 "Gill Sans", sans-serif;
 				text-align: center;
+				animation: night 16s;
+			}
+
+			html:after {
+				content: "";
+				position: fixed;
+				z-index: -1;
+				inset: 0;
+				mix-blend-mode: multiply;
+				background: #000
+					radial-gradient(closest-side, #fff 35%, #fde2c8 44%, #e0876a 56%, #7a3a6a 70%, #231c40 84%, #000)
+					50% -160vh / 1600vw 480vh no-repeat;
+				animation: dawn 16s cubic-bezier(0.45, 0, 0.55, 1);
+			}
+
+			@keyframes night {
+				from {
+					color: #fff;
+				}
+			}
+
+			@keyframes dawn {
+				from {
+					background-size: 0 0;
+					background-position: 50% 95vh;
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				html,
+				html:after {
+					animation: none;
+				}
 			}
 
 			body {
